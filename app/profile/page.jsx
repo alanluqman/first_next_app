@@ -43,7 +43,7 @@ const MyProfile = () => {
     return (
         <div>
             <Profile
-                name='my'
+                name={session?.user.name}
                 desc='Welcome to your personalized page.'
                 data={posts}
                 handleEdit={handleEdit}
